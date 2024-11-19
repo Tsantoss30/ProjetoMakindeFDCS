@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    color: #f6f6f6;
+    background-color: #000000;
+}
+
+.cabecalho{
+    padding: 1.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho_subtitulo{
+    font-family: "Lacquer", serif;
+    font-size: 2rem;
+    letter-spacing: 50px;
+}
+
+.cabecalho_links{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_links_navegacao{
+    text-decoration: none;
+    font-family: "Lacquer", serif;
+    font-weight: bolder;
+    color: #f6f6f6;
+    letter-spacing: 5px;
+}
+
+.apresentacao{
+    padding: 9% 0;
+    text-align: center;
+}
+
+.apresentacao_titulo{
+    font-family: "Lacquer", serif;
+    font-size: 5rem;
+}
+
+.apresentacao_subtitulo{
+    padding-top: 9%;
+    font-family: "Lacquer", serif;
+    text-decoration: underline #731DD8;
+}
+
+strong{
+    color: #731DD8;
+}
+
+.sobre_mim{
+    padding: 5% 13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagem{
+    width: 25%;
+    padding: 2%;
+    border: 10px groove #731DD8;
+}
+
+.sobre_mim_texto{
+    text-align: justify;
+    font-family: "Lacquer", serif;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+.sobre_mim_subtitulo{
+    padding-top: 6%;
+    text-align: center;
+    font-family: "Lacquer", serif;
+    font-size: 4rem;
+    text-decoration: underline #731DD8;
+}
+
+@media (max-width: 1111px){
+    .cabecalho{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalho_links{
+        flex-direction: column;
+        margin-top: 8%;
+        align-items: center;
+    }
+
+    .sobre_mim{
+        width: auto;
+        flex-direction: column;
+    }
+
+    
+
+    .imagem{
+        border: none;
+        width: 60%;
+    }
+}
